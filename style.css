@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.main-container{
+    border: 1.5px solid black;
+    margin: 5px;
+}
+.profile-image{
+    border: 1.5px solid rgb(236, 236, 236);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 50%;
+}
+img{
+    height: 200px;
+    border-radius: 50%;
+}
+.basic-details{
+    font-weight: 500;
+}
+h2, .location-icon, .link-icon{
+    overflow: hidden;
+}
+.location, .link{
+    display: flex;
+}
+.link{
+    color: black;
+    font-weight: 500;
+}
+
+.repos-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.repos-container > div{
+    border: 1.5px solid black;
+    padding: 20px;
+}
+
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px){
+    .repos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .repos-container{
+        margin: 0;
+    }
+    .repos-container > div{
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+    .profile-image{
+        margin: auto;
+    }
+    .basic-details{
+        text-align: center;
+    }
+    .location{
+        justify-content: center;
+    }
+    .link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        width: fit-content;
+        margin: auto;
+    }
+}
